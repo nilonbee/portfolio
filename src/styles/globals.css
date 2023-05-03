@@ -16,12 +16,22 @@
   }
 }
 
+@layer components {
+  .heroButton {
+    @apply px-6 py-2 border border-[#242424] rounded-full uppercase text-sm tracking-widest text-gray-500 transition-all
+  }
+
+  .contactInput {
+    @apply outline-none bg-slate-400/10 rounded-[8px] 
+    border-b px-6 py-4 border-[#242424] text-gray-200 
+    focus:text-[#F7AB0A]/80 focus:border-[#F7Ab0A]/80 
+    hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A/40]
+  }
+}
+
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }

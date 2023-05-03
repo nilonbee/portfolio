@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "module": "esnext",
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "allowJs": true,
+      "jsx": "preserve",
+      "outDir": "dist",
+      "moduleResolution": "node",
+      "isolatedModules": true,
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "noEmit": true,
+      "strict": true
+    },
+    "types": ["node", "next", "next/types/global", "next-sanity"]
+  }
