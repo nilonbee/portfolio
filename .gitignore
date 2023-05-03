@@ -7,6 +7,7 @@
 .pnp.js
 .env
 .env.example
+.yarn
 
 # testing
 /coverage
