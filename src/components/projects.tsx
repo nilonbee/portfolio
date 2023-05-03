@@ -22,7 +22,7 @@ const Projects = ({ projects }: Props) => {
         Projects
       </h3>
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-tracking-gray-500 scrollbar-thumb-[#F7AB0A]">
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <div
             key={project?._id}
             className="w-screen flex-shrink-0 snap-center flex flex-col space-x-5 items-center justify-center p-20 md:p-44 h-center"
@@ -39,7 +39,7 @@ const Projects = ({ projects }: Props) => {
             <div className="space-y-10 px-0 md:px-10 max-6xl">
               <h4 className="text-4xl font-semibold text-center ">
                 <span className="underline decoration-[#F7AB0A]/50">
-                  Case Study {key + 1} of {projects?.length}
+                  Case Study {index + 1} of {projects?.length}
                 </span>
                 {": "}
                 {project?.title}
