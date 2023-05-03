@@ -5,8 +5,8 @@
 /.babel/
 /.pnp
 .pnp.js
-/.env/
-/.env.example/
+.env
+.env.example
 
 # testing
 /coverage
