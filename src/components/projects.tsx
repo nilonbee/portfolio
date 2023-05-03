@@ -22,9 +22,9 @@ const Projects = ({ projects }: Props) => {
         Projects
       </h3>
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-tracking-gray-500 scrollbar-thumb-[#F7AB0A]">
-        {projects.map((project, key) => (
+        {projects.map((project) => (
           <div
-            key={key}
+            key={project?._id}
             className="w-screen flex-shrink-0 snap-center flex flex-col space-x-5 items-center justify-center p-20 md:p-44 h-center"
           >
             <motion.img
@@ -34,6 +34,7 @@ const Projects = ({ projects }: Props) => {
               transition={{ duration: 1.2 }}
               viewport={{ once: true }}
               src={urlFor(project?.image).url()}
+              alt="imgex"
             />
             <div className="space-y-10 px-0 md:px-10 max-6xl">
               <h4 className="text-4xl font-semibold text-center ">
@@ -48,6 +49,7 @@ const Projects = ({ projects }: Props) => {
                   <img
                     className="h-12 w-12 rounded-full"
                     src={urlFor(tech.image).url()}
+                    alt="imgss"
                   />
                 ))}
               </div>
