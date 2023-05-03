@@ -28,7 +28,7 @@ const ContactMe = ({ pageInfo }: Props) => {
       <div className="flex flex-col space-y-10">
         <h4 className="text-4xl font-semibold text-center">
           I have got what you need..
-          <span className="decoration-[#F7AB0A]/50 underline">Let's Talk</span>
+          <span className="decoration-[#F7AB0A]/50 underline">Lets Talk</span>
         </h4>
         <div className="flex items-center space-x-5 justify-center">
           <PhoneIcon className="text-[#f7AB0A] h-7 w-7 animate-pulse" />
@@ -36,9 +36,7 @@ const ContactMe = ({ pageInfo }: Props) => {
         </div>
         <div className="flex items-center space-x-5 justify-center">
           <EnvelopeIcon className="text-[#f7AB0A] h-7 w-7 animate-pulse" />
-          <p className="text-2xl">
-            {pageInfo?.address}
-          </p>
+          <p className="text-2xl">{pageInfo?.address}</p>
         </div>
         <div className="flex items-center space-x-5 justify-center">
           <MapPinIcon className="text-[#f7AB0A] h-7 w-7 animate-pulse" />

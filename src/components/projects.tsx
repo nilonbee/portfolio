@@ -47,6 +47,7 @@ const Projects = ({ projects }: Props) => {
               <div className="flex flex-row space-x-2 justify-center">
                 {project?.technologies.map((tech) => (
                   <img
+                    key={tech._id}
                     className="h-12 w-12 rounded-full"
                     src={urlFor(tech.image).url()}
                     alt="imgss"
