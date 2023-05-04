@@ -18,7 +18,12 @@ const Header = ({ socials }: Props) => {
         className="flex flex-row items-center"
       >
         {socials.map((item, key) => (
-          <SocialIcon key={key} url={item.url} bgColor="transparent" />
+          <SocialIcon
+            key={key}
+            url={item.url}
+            fgColor="gray"
+            bgColor="transparent"
+          />
         ))}
       </motion.div>
       <motion.div
