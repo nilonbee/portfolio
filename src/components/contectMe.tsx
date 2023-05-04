@@ -21,12 +21,12 @@ const ContactMe = ({ pageInfo }: Props) => {
   };
 
   return (
-    <div className="h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mc-auto items-center">
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+    <div className="h-screen flex relative flex-col w-[140px] md:w-[50%] xl:w-[60%] text-center md:text-left md:flex-row mx-auto px-10 justify-center items-center">
+      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl ">
         Contact Me...
       </h3>
-      <div className="flex flex-col space-y-10">
-        <h4 className="text-4xl font-semibold text-center">
+      <div className="absolute top-48 justify-center flex flex-col space-y-10 text-gray-300">
+        <h4 className="text-2xl font-semibold text-center">
           I have got what you need..
           <span className="decoration-[#F7AB0A]/50 underline">Lets Talk</span>
         </h4>
@@ -44,33 +44,33 @@ const ContactMe = ({ pageInfo }: Props) => {
         </div>
 
         <form
-          className="flex flex-col w-fit mx-auto space-y-2"
+          className="flex flex-col mx-auto space-y-2 w-fit"
           onSubmit={handleSubmit(onSubmit)}
         >
           <div className="flex space-x-2">
             <input
               {...register("name")}
               placeholder="Name"
-              className="contactInput"
+              className="contactInput w-64 h-12"
               type="text"
             />
             <input
               {...register("email")}
               placeholder="Email"
-              className="contactInput"
+              className="contactInput w-64 h-12"
               type="text"
             />
           </div>
           <input
             {...register("subject")}
             placeholder="subject"
-            className="contactInput"
+            className="contactInput w-128 h-12"
             type="text"
           />
           <textarea
             {...register("message")}
             placeholder="Message"
-            className="contactInput"
+            className="contactInput w-128"
             id="text-area"
           />
           <button className="bg-[#F7Ab0A]/80 py-5 px-10 rounded-md text-black font-bold hover:bg-[#F7AB0A] focus:bg-[#F7AB0A]">

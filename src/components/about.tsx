@@ -17,7 +17,7 @@ const About = ({ pageInfo }: Props) => {
       transition={{ duration: 1.5 }}
       className="h-screen flex flex-col md:flex-row relative text-center md:text-left max-w-7xl px-10 justify-evenly mb-20 mx-auto items-center"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 ">
+      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-300 text-2xl">
         ABOUT
       </h3>
       <motion.img
@@ -29,7 +29,7 @@ const About = ({ pageInfo }: Props) => {
         whileTap={{ scale: 0.8 }}
         transition={{ duration: 1.5 }}
         viewport={{ once: true }}
-        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
+        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[300px] xl:h-[400px]"
         src={urlFor(pageInfo?.profilePic).url()}
         alt="image"
       />
