@@ -36,11 +36,11 @@ const ContactMe = ({ pageInfo }: Props) => {
         </div>
         <div className="flex items-center space-x-5 justify-center">
           <EnvelopeIcon className="text-[#f7AB0A] h-7 w-7 animate-pulse" />
-          <p className="text-2xl">{pageInfo?.address}</p>
+          {/* <p className="text-2xl">{pageInfo?.address}</p> */}
         </div>
         <div className="flex items-center space-x-5 justify-center">
           <MapPinIcon className="text-[#f7AB0A] h-7 w-7 animate-pulse" />
-          <p className="text-2xl">{pageInfo?.email}</p>
+          {/* <p className="text-2xl">{pageInfo?.email}</p> */}
         </div>
 
         <form

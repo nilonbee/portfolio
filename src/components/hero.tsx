@@ -14,8 +14,8 @@ type Props = {
 const Hero = ({ pageInfo }: Props) => {
   const [text, count] = useTypewriter({
     words: [
-      "I'm Nilan",
-      `${pageInfo?.role}`,
+      "Im Nilan",
+      // `${pageInfo?.role}`,
       "With React js and Next JS",
       "Building Awesome and more cleaner UI",
     ],
@@ -25,18 +25,18 @@ const Hero = ({ pageInfo }: Props) => {
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
-      <img
+      {/* <img
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
         src={urlFor(pageInfo?.heroImage).url()}
         alt="imgex"
-      />
+      /> */}
       <div className="z-20">
         <h2 className="text-gray-500  pb-2 tracking-[15px]">
-          {pageInfo?.role}
+          {/* {pageInfo?.role} */}
         </h2>
         <h1>
           <span className="text-2xl tracking-[5px] lg:text-6xl font-semibold px-2 text-blue-400">
-            {text}
+            {/* {text} */}
           </span>
           <Cursor cursorColor="#F7AB0A" />
         </h1>

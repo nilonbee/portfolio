@@ -8,7 +8,6 @@ type Props = {
 };
 
 const About = ({ pageInfo }: Props) => {
-  const { backgroundInformation } = pageInfo;
   return (
     <motion.div
       initial={{

@@ -17,14 +17,14 @@ const Header = ({ socials }: Props) => {
         transition={{ duration: 1 }}
         className="flex flex-row items-center"
       >
-        {socials.map((item, key) => (
+        {/* {socials.map((item, key) => (
           <SocialIcon
             key={key}
             url={item.url}
             fgColor="gray"
             bgColor="transparent"
           />
-        ))}
+        ))} */}
       </motion.div>
       <motion.div
         initial={{ x: 500, opacity: 0, scale: 0.5 }}
