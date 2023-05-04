@@ -8,8 +8,8 @@ type Props = {
   socials: Social[];
 };
 
-const Header = () => {
-  // { socials }: Props
+const Header = ({ socials }: Props) => {
+  
   return (
     <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto">
       <motion.div
@@ -18,14 +18,14 @@ const Header = () => {
         transition={{ duration: 1 }}
         className="flex flex-row items-center"
       >
-        {/* {socials.map((item, key) => (
+        {socials.map((item, key) => (
           <SocialIcon
             key={key}
             url={item.url}
             fgColor="gray"
             bgColor="transparent"
           />
-        ))} */}
+        ))}
       </motion.div>
       <motion.div
         initial={{ x: 500, opacity: 0, scale: 0.5 }}

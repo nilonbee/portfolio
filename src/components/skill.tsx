@@ -8,12 +8,10 @@ type Props = {
   directionLeft: boolean;
 };
 
-const SingleSkill = () => {
-  // { directionLeft, skill }: Props
-  // const { image, progress, title } = skill;
+const SingleSkill = ({ directionLeft, skill }: Props) => {
   return (
     <div className="group relative flex curser-pointer">
-      {/* <motion.img
+      <motion.img
         initial={
           directionLeft ? { x: -200, opacity: 0 } : { x: 200, opacity: 0 }
         }
@@ -23,7 +21,7 @@ const SingleSkill = () => {
          group-hover:grayscale transition duration-300 ease-in-out w-24 h-24 rounded-full "
         src={urlFor(skill?.image).url()}
         alt="imgex"
-      /> */}
+      />
       <div
         className="absolute group-hover:opacity-80 
       transition duration-300 ease-in-out group-hover:bg-white 
@@ -31,7 +29,7 @@ const SingleSkill = () => {
       >
         <div className="flex items-center justify-center h-full">
           <p className="text-3xl font-bold text-black opacity-100">
-            {/* {progress} */}
+            {skill?.progress}
           </p>
         </div>
       </div>

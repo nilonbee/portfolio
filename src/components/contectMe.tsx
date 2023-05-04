@@ -13,9 +13,8 @@ type inputs = {
   message: string;
 };
 
-const ContactMe = () => {
-  // { pageInfo }: Props
-  const { handleSubmit, register, watch } = useForm<inputs>();
+const ContactMe = ({ pageInfo }: Props) => {
+  const { handleSubmit, register } = useForm<inputs>();
 
   const onSubmit: SubmitHandler<inputs> = () => {
     // window.location.href = `mailto:nilonbee@gmail.com?subject=${data.subject}&body=Hi, my name is ${data.name}. ${data.message} (${data.email})`;
@@ -37,11 +36,11 @@ const ContactMe = () => {
         </div>
         <div className="flex items-center space-x-5 justify-center">
           <EnvelopeIcon className="text-[#f7AB0A] h-7 w-7 animate-pulse" />
-          {/* <p className="text-2xl">{pageInfo?.address}</p> */}
+          <p className="text-2xl">{pageInfo?.address}</p>
         </div>
         <div className="flex items-center space-x-5 justify-center">
           <MapPinIcon className="text-[#f7AB0A] h-7 w-7 animate-pulse" />
-          {/* <p className="text-2xl">{pageInfo?.email}</p> */}
+          <p className="text-2xl">{pageInfo?.email}</p>
         </div>
 
         <form
