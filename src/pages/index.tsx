@@ -24,6 +24,7 @@ type Props = {
 };
 
 const Home = ({ pageInfo, socials, skills, experiences, projects }: Props) => {
+  console.log("pagw", pageInfo);
   return (
     <div className="flex-col items-center bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/10 scrollbar-thumb-[#F7AB0A]">
       <div>
@@ -83,6 +84,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       experiences,
       socials,
     },
+    revalidate: 10,
   };
 };
 
