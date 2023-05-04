@@ -11,7 +11,8 @@ type Props = {
   pageInfo: PageInfo;
 };
 
-const Hero = ({ pageInfo }: Props) => {
+const Hero = () => {
+  // { pageInfo }: Props
   const [text, count] = useTypewriter({
     words: [
       "Im Nilan",

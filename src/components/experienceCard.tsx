@@ -7,7 +7,8 @@ type Props = {
   experience: Experience;
 };
 
-const ExperienceCard = ({ experience }: Props) => {
+const ExperienceCard = () => {
+  // { experience }: Props
   return (
     <article
       className="flex flex-col space-x-10 rounded-1 items-center flex-shrink-0 w-[200px] md:w-[300px] xl:w-[600px] snap-center

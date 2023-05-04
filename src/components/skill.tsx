@@ -8,7 +8,8 @@ type Props = {
   directionLeft: boolean;
 };
 
-const SingleSkill = ({ directionLeft, skill }: Props) => {
+const SingleSkill = () => {
+  // { directionLeft, skill }: Props
   // const { image, progress, title } = skill;
   return (
     <div className="group relative flex curser-pointer">

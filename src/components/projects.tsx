@@ -7,7 +7,8 @@ type Props = {
   projects: Project[];
 };
 
-const Projects = ({ projects }: Props) => {
+const Projects = () => {
+  // { projects }: Props
   return (
     <motion.div
       initial={{ opacity: 0 }}

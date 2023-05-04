@@ -13,7 +13,8 @@ type inputs = {
   message: string;
 };
 
-const ContactMe = ({ pageInfo }: Props) => {
+const ContactMe = () => {
+  // { pageInfo }: Props
   const { handleSubmit, register, watch } = useForm<inputs>();
 
   const onSubmit: SubmitHandler<inputs> = () => {

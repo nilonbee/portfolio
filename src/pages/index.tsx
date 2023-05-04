@@ -32,24 +32,24 @@ const Home = ({ pageInfo, socials, skills, experiences, projects }: Props) => {
           <title>Nilan-Portifolio</title>
         </Head>
 
-        <Header socials={socials} />
+        <Header />
         <section className="snap-start" id="hero">
-          <Hero pageInfo={pageInfo} />
+          <Hero />
         </section>
         <section className="snap-center" id="about">
-          <About pageInfo={pageInfo} />
+          <About />
         </section>
         <section className="snap-center" id="experience">
-          <WorkExperience experiences={experiences} />
+          <WorkExperience  />
         </section>
         <section className="snap-center" id="skills">
-          <Skills skills={skills} />
+          <Skills />
         </section>
         <section className="snap-start" id="projects">
-          <Projects projects={projects} />
+          <Projects />
         </section>
         <section className="snap-start" id="contact">
-          <ContactMe pageInfo={pageInfo} />
+          <ContactMe />
         </section>
       </div>
 
@@ -70,23 +70,23 @@ const Home = ({ pageInfo, socials, skills, experiences, projects }: Props) => {
 
 export default Home;
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
-  const pageInfo: PageInfo = await fetchPageInfo();
-  const projects: Project[] = await fetchProjects();
-  const skills: Skill[] = await fetchSkills();
-  const experiences: Experience[] = await fetchExperiences();
-  const socials: Social[] = await fetchSocials();
-  return {
-    props: {
-      pageInfo,
-      projects,
-      skills,
-      experiences,
-      socials,
-    },
-    revalidate: 10,
-  };
-};
+// export const getStaticProps: GetStaticProps<Props> = async () => {
+//   const pageInfo: PageInfo = await fetchPageInfo();
+//   const projects: Project[] = await fetchProjects();
+//   const skills: Skill[] = await fetchSkills();
+//   const experiences: Experience[] = await fetchExperiences();
+//   const socials: Social[] = await fetchSocials();
+//   return {
+//     props: {
+//       pageInfo,
+//       projects,
+//       skills,
+//       experiences,
+//       socials,
+//     },
+//     revalidate: 10,
+//   };
+// };
 
 // export const getStaticProps: GetStaticProps<Props> = async () => {
 //   const pageInfo: PageInfo = await fetchPageInfo();

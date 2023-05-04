@@ -7,7 +7,7 @@ type Props = {
   experiences: Experience[];
 };
 
-const WorkExperience = ({ experiences }: Props) => {
+const WorkExperience = () => {
   // const {} = experiences;
   return (
     <motion.div

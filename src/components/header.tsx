@@ -8,7 +8,8 @@ type Props = {
   socials: Social[];
 };
 
-const Header = ({ socials }: Props) => {
+const Header = () => {
+  // { socials }: Props
   return (
     <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto">
       <motion.div

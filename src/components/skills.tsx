@@ -7,7 +7,8 @@ type Props = {
   skills: Skill[];
 };
 
-const Skills = ({ skills }: Props) => {
+const Skills = () => {
+  // { pageInfo }: Props
   return (
     <motion.div
       initial={{
