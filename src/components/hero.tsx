@@ -12,7 +12,7 @@ type Props = {
 };
 
 const Hero = ({ pageInfo }: Props) => {
-   const [text, count] = useTypewriter({
+  const [text, count] = useTypewriter({
     words: [
       "I'm Nilan",
       `${pageInfo?.role}`,
@@ -27,11 +27,9 @@ const Hero = ({ pageInfo }: Props) => {
       <BackgroundCircles />
       <img
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
-        // src="https://drive.google.com/file/d/1X5RY2HSAngezYTz8Am8Sc4FQNTrKGSpG/view?usp=share_link"
         src={urlFor(pageInfo?.heroImage).url()}
         alt="imgex"
       />
-
       <div className="z-20">
         <h2 className="text-gray-500  pb-2 tracking-[15px]">
           {pageInfo?.role}
